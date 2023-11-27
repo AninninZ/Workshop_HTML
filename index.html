@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>Workshop #HTML - FORM</b></h1>
+    <form action="$">
+        <table>
+            <tr>
+                <td>ชื่อ</td>
+                <td><input type="text" size="18"></td>
+            </tr>
+            <tr>
+                <td>สกุล</td>
+                <td><input type="text" size="18"></td>
+            </tr>
+            <tr>
+                <td>วัน/เดือน/ปีเกิด</td>
+                <td>
+                <input type="date" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" size="18"></td>
+            </tr>
+            <tr>
+                <td>เพศ</td>
+                <td>
+                <input type="radio" name="sex" id="male">
+                <label for="male">ชาย</label>
+                <input type="radio" name="sex" id="female">
+                <label for="female">หญิง</label>
+                </td>
+            </tr>
+            <tr>
+                <td>รูป</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>ที่อยู่</td>
+                <td>
+                <textarea name="address" id="input_address" cols="22" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>สีที่ชอบ</td>
+                <td><select>
+                    <option>สีแดง</option>
+                    <option>สีแสด</option>
+                    <option>สีเหลือง</option>
+                    <option>สีเขียว</option>
+                    <option>สีน้ำเงิน</option>
+                    <option>คราม</option>
+                    <option>สีม่วง</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>แนวเพลงที่ชอบ</td>
+                <td>
+                <input type="radio" name="song_type" id="country">
+                <label for="country">เพื่อชีวิต</label>
+                <input type="radio" name="song_type" id="esan">
+                <label for="esan">ลูกทุ่ง</label>
+                <input type="radio" name="song_type" id="etc">
+                <label for="etc">อื่นๆ</label>
+                </td>
+            </tr>
+        </table>
+
+        <input type="checkbox" name="agreement" id="accept">ยินยอมให้เก็บข้อมูล
+        <br><br>
+        <input type="reset" value="Reset">
+        <span style="padding-left:140px"></span>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
