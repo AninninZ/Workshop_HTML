@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <head>
     <title>Workshop HTML</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="smokinStyle.css"/>
 </head>
 <body>
-    <h1><b>Workshop #HTML - FORM</b></h1>
+    <h1>Workshop #HTML - FORM</h1>
     <form action="#">
-        <table>
+        <table border="1px">
             <tr>
                 <td>ชื่อ</td>
                 <td><input type="text" size="18"></td>
@@ -40,7 +42,7 @@
             <tr>
                 <td>ที่อยู่</td>
                 <td>
-                <textarea name="address" id="input_address" cols="22" rows="5"></textarea>
+                <textarea name="address" id="input_address" cols="20" rows="3"></textarea>
                 </td>
             </tr>
             <tr>
@@ -57,7 +59,7 @@
                 </select></td>
             </tr>
             <tr>
-                <td>แนวเพลงที่ชอบ</td>
+                <td class="music">แนวเพลงที่ชอบ</td>
                 <td>
                 <input type="radio" name="song_type" id="country">
                 <label for="country">เพื่อชีวิต</label>
@@ -67,13 +69,18 @@
                 <label for="etc">อื่นๆ</label>
                 </td>
             </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+                <input type="checkbox" name="agreement" id="accept">ยินยอมให้เก็บข้อมูล
+                <br><br>
+                <input type="reset" value="Reset">
+                <span style="padding-left:140px"></span>
+                <input type="submit" value="Submit">
+                </td>
+            </tr>
         </table>
 
-        <input type="checkbox" name="agreement" id="accept">ยินยอมให้เก็บข้อมูล
-        <br><br>
-        <input type="reset" value="Reset">
-        <span style="padding-left:140px"></span>
-        <input type="submit" value="Submit">
+        
     </form>
 </body>
 </html>
