@@ -47,6 +47,7 @@ form, h1 {
     background-image: url(https://images.genius.com/f650ad84012da6cd00e8f10725a3bf99.1000x560x1.jpg);
     background-size: cover;
     -webkit-text-fill-color: transparent;
+    box-shadow: 0px 30px 15px 0px rgba(0, 0, 0, 0.5)
 }
 
 .bg_h1 {
