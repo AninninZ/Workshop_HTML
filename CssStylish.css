@@ -1,0 +1,59 @@
+* {
+    color: #f4896f;
+}
+
+body {
+    background-image: url(https://programmerhumor.io/wp-content/uploads/2022/08/programmerhumor-io-frontend-memes-programming-memes-15600e83ed3e8b0.jpg);
+    background-size: contain;
+}
+
+h1 {
+    font-family: 'TH SarabunPSK';
+    font-size: 48px;
+    background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
+    animation: rainbow-animation 60s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+  
+form, h1 {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 5000vh;
+    }
+}
+.box {
+    font-family: 'TH SarabunPSK';
+    margin: auto;
+    width: 800px;
+    height: 400px;
+    color: #00b7ff;
+    background-color: #f4896f;
+    line-height: 20;
+    text-align: center;
+    font-size: 20px;
+    border: 4px dashed rgb(128, 0, 255);  
+}
+
+.box:hover{
+    background-image: url(https://images.genius.com/f650ad84012da6cd00e8f10725a3bf99.1000x560x1.jpg);
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg_h1 {
+    margin: auto;
+    border-radius: 90%;
+    width: 400px;
+    height: 60px;
+    background: -webkit-linear-gradient(#c6ff1a, #ffffff);
+}
+

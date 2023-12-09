@@ -40,5 +40,5 @@ td:nth-child(odd){
     color: rgb(254, 254, 79);
     background-color: #f4896f;
     text-align: center;
-    border: 10px dashed rebeccapurple;
+    border: 4px dashed rebeccapurple;
 }
