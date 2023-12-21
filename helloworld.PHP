@@ -19,7 +19,8 @@
     </form>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // $_SERVER["REQUEST_METHOD"] == "POST"
+    if (isset($_POST['number'])) {
         $selectedNumber = $_POST["number"];
         echo "<h3>สูตรคูณแม่ $selectedNumber</h3>";
         echo "<table>";
