@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/my-route', function(){
     $data = ['val_a' => 'Hello World!'];
     $data['val_b'] = "laravel";
@@ -27,4 +23,14 @@ Route::get('/my-route', function(){
 Route::post("/my-route", function(Request $req){
     $data['myinput'] = $req-> input('myinput');
     return view('myroute', $data);
+});
+
+
+Route::get('/multification', function(){
+    return view('multi.multi_input');
+});
+
+Route::post("/multification", function(Request $req){
+    $data['number'] = $req -> input('number');
+    return view('multi.multi_result', $data);
 });
