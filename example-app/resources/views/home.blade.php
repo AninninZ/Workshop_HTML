@@ -292,6 +292,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <label for="female">Female</label>
                                     </div>
                                     <div class="card-body">
+                                        <h5 class = "card card-primary"><b>Picture</b></h5>
+                                        <input type="file">
+                                    </div>
+                                    <div class="card-body">
                                         <h5 class = "card card-primary"><b>Address</b></h5>
                                         <textarea name="address" id="input_address" cols="70" rows="3"></textarea>
                                     </div>
