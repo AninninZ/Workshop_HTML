@@ -25,6 +25,14 @@ Route::post('/register', [MyAuth::class, 'register_process']);
 
 Route::resource('/titles', C_titles::class)->middleware('auth');
 
+// Route::post("/titles", function(Request $req){
+//     if($req -> input('logout')){
+//         return view('multi.multi_result', $data);
+//     }
+// });
+
+
+
 Route::get('/my-route', function(){
     $data = ['val_a' => 'Hello World!'];
     $data['val_b'] = "laravel";

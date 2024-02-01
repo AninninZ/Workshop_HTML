@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ url('assets/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ url('assets/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/dist/css/adminlte.css') }}">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -182,6 +183,11 @@
                     </div>
                     <div class="info">
                         <a href="#" class="d-block">Alexander Pierce</a>
+                    </div>
+                    <div class="info">
+                        <form action="{{ url('logout')}}">
+                        <button type="submit" class="btn btn-logout" name = "logout" font-size ="10px" padding = "5px" >Log out</button>
+                        </form>
                     </div>
                 </div>
 

@@ -47,6 +47,7 @@ class C_titles extends Controller
         //
     }
 
+
     /**
      * Display the specified resource.
      */

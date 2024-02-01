@@ -25,6 +25,7 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #007bff;
+  --logout: #c60000;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -2616,6 +2617,46 @@ fieldset:disabled a.btn {
 .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0 rgba(38, 143, 255, 0.5);
 }
+
+.btn-logout {
+    color: #fff;
+    background-color: #c60000;
+    border-color: #000000;
+    box-shadow: none;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.btn-logout:hover {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #000000;
+  }
+
+  .btn-logout:focus, .btn-logout.focus {
+    color: #fff;
+    background-color: #b24242;
+    border-color: #000000;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .btn-logout.disabled, .btn-logout:disabled {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000;
+  }
+
+  .btn-logout:not(:disabled):not(.disabled):active, .btn-logout:not(:disabled):not(.disabled).active,
+  .show > .btn-logout.dropdown-toggle {
+    color: #fff;
+    background-color: #cc0000;
+    border-color: #bf0000;
+  }
+
+  .btn-logout:not(:disabled):not(.disabled):active:focus, .btn-logout:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-logout.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0 rgba(255, 38, 38, 0.5);
+  }
 
 .btn-secondary {
   color: #fff;
