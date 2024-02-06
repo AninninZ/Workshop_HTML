@@ -1,4 +1,74 @@
-<!DOCTYPE html>
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <body>
+        <h1 id="myh1">Java Script</h1>
+        <button onclick="alert('Hello World')">Kor Click di karb</button>
+        <input type="text" id = "my_number" value="100">
+        <button onclick="myFunction()">submit number</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                console.log("hello world - document ready")
+                console.log($('#myh1').text())
+                console.log($('#my_number').val())
+                $('#myh1').text("javascript 101")
+                $('#my_number').val(100)
+            });
+
+            function myFunction(){
+                let my_number = parseInt($('#my_number').val())
+                for (let i = 0; i < my_number ; i++){
+                    $('#myh1').append(`<h1>${i}</h1>`)
+                }
+                console.log(document.getElementById('my_number').value);
+                console.log('Click submit number')
+
+            };
+            console.log("Hello World");
+            let myval;
+            myval = '10';
+            myval2 = '2';
+            console.log(myval, myval2);
+            myval3 = parseInt(myval) + parseInt(myval2);
+            console.log(myval3);
+            myval3 = parseInt(myval) - parseInt(myval2);
+            console.log(myval3);
+        </script>
+        <script>
+            let myval4 = [1, 2, 3, 4];
+
+            myval4[5] = 5;
+            myval4[6] = [6, 7, 8, 9];
+            console.log(myval4);
+
+            myval4.forEach(function(value, index){
+                console.log("in foreach ", value, index)
+            });
+
+            console.log()
+
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -137,4 +207,4 @@
             </div>
         </div>
     </body>
-</html>
+</html> --}}

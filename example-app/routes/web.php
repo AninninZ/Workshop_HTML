@@ -17,6 +17,8 @@ use App\Http\Controllers\MyAuth;
 |
 */
 
+
+
 Route::get('/login', [MyAuth::class, 'login_view'])->name('login');
 Route::get('/register', [MyAuth::class, 'register_view']);
 Route::get('/logout', [MyAuth::class, 'logout_process']);
@@ -24,14 +26,6 @@ Route::post('/login', [MyAuth::class, 'login_process']);
 Route::post('/register', [MyAuth::class, 'register_process']);
 
 Route::resource('/titles', C_titles::class)->middleware('auth');
-
-// Route::post("/titles", function(Request $req){
-//     if($req -> input('logout')){
-//         return view('multi.multi_result', $data);
-//     }
-// });
-
-
 
 Route::get('/my-route', function(){
     $data = ['val_a' => 'Hello World!'];
@@ -59,6 +53,12 @@ Route::get('/mycon2','App\Http\Controllers\MyController@index');
 Route::namespace('App\Http\Controllers')->group(function(){
     Route::get('/mycon3','MyController@index');
 });
-// Route::get('/mycon4','App\Http\Controllers\MyController@index')??
+
 
 Route::resource('/titles',C_titles::class);
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+?>
